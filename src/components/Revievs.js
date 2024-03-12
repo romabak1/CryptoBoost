@@ -54,9 +54,9 @@ const Revievs = () => {
             <RevCard
               className="revCard"
               img={img3}
-              h3="Layer AI, Co-founder"
-              h1="Clément Tequi"
-              text="A huge advantage of the service is free trial period for the first couple of days. If you in doubt - just take the free test, everything is done at the highest level."
+              h3="COINZIX, CEO & Founder"
+              h1="Ovidiu Chirodea"
+              text="From studying our audience, to developing a strategy for conducting valuable research. Everything in which LocalTrade’s advertising participated - the CryptoBoost staff performed each task at 100%."
             />
           </div>
           

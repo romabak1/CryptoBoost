@@ -22,11 +22,12 @@ const firebaseConfig = {
 };
 
 
-
 const telegramConfig = {
   token: process.env.REACT_APP_TGKEY,
   chatids: [607704920, 5739391138]
 }
+
+const captcha = process.env.REACT_APP_RECAPTCHA;
 
 
 initializeApp(firebaseConfig);
@@ -151,7 +152,7 @@ export default function ContactModal() {
           <div className="captcha-modal">
             <div className="captcha-content">
               <ReCAPTCHA
-                sitekey={process.env.REACT_APP_RECAPTCHA2}
+                sitekey={captcha}
                 onChange={onCaptchaVerified}
               />
               <button onClick={() => setShowCaptcha(false)}>{t('close')}</button>

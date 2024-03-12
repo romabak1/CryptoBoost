@@ -25,6 +25,7 @@ initializeApp(firebaseConfig);
 const db = getFirestore();
 
 const Subscription = () => {
+  const captcha = process.env.REACT_APP_RECAPTCHA
   const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [showCaptcha, setShowCaptcha] = useState(false);
@@ -73,7 +74,7 @@ const Subscription = () => {
         <div className="captcha-modal">
           <div className="captcha-content">
             <ReCAPTCHA
-              sitekey = {process.env.REACT_APP_RECAPTCHA1}
+              sitekey={captcha}
               onChange={onCaptchaVerified}
             />
             <button onClick={() => setShowCaptcha(false)}>{t('close')}</button>

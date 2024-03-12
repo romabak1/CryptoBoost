@@ -1,0 +1,12 @@
+.app {
+    background-position-x: 100%;
+    justify-content: center;
+}
+
+
+html body {
+    overflow-x: hidden;
+    max-width: 100%;
+    background: url('../assets/layer/BGframe.png') no-repeat center center / cover;
+}
+

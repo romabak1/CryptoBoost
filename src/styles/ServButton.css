@@ -1,0 +1,58 @@
+.row .button {
+  border-radius: 40px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  display: inline-flex;
+  height: 63px;
+  width: auto;
+  padding: 30px 35px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+.button .label {
+  margin: 0;
+}
+
+.row .button:last-child {
+  margin-right: 0;
+  margin-bottom: 0px;
+}
+
+.button:hover {
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+.button-badge {
+  border-radius: 30px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 15.261px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.305px;
+  padding: 12px;
+}
+.button.active {
+  border: 1px solid #ff6b00;
+  background: -webkit-linear-gradient(left, #a14604, #ff6c01, #a14604, #fc4a1a);
+  color: black;
+}
+
+@media (max-width: 1300px) {
+}

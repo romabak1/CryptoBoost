@@ -1,0 +1,374 @@
+.hero-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding-bottom: 60px;
+  margin-bottom: 3%;
+  margin-left: 0;
+  color: #fff;
+  z-index: 1;
+  max-height: fit-content;
+}
+
+.cont_mobile {
+  display: none;
+}
+
+.hero-section .cont {
+  display: flex;
+  position: relative;
+  height: 100%;
+  margin-top: 4%;
+  justify-items: end;
+  overflow: hidden;
+}
+
+.gradient {
+  background: linear-gradient(
+    71deg,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(223, 93, 0, 1) 134%
+  );
+  position: absolute;
+  width: 65%;
+  height: 100vw;
+  z-index: 3;
+  right: 0;
+}
+
+.hero-section .hero-text {
+  position: static;
+  margin-left: 10%;
+  padding-top: 21%;
+  padding-left: 8%;
+  width: fit-content;
+  padding-bottom: 130px;
+  z-index: 3;
+}
+
+.hero-section h1 {
+  font-family: "Neue Machina", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 101%;
+  text-transform: uppercase;
+  background: linear-gradient(
+    270deg,
+    #b9bebe 0.16%,
+    #fff 48.49%,
+    #d8dbdb 99.94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  margin: 0 auto;
+}
+
+h1.first {
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(left, #a14604, #ff6c01, #a14604, #fc4a1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-section p {
+  margin-top: 2%;
+  max-width: 70%;
+  color: #838383;
+  font-size: 20px;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.4px;
+  margin-right: 3%;
+}
+
+.hero-section .cta-button {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  border: 1px solid #ff6b00;
+  background: linear-gradient(90deg, #a14604 0%, #ff6701 53.65%, #a14604 100%),
+    linear-gradient(90deg, #52188b 3%, #9f3dff 44.83%, #52188b 97.66%);
+  min-width: 317px;
+  min-height: 84px;
+  border-radius: 40px;
+  color: #fff;
+  font-family: Neue Machina;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.hero_img {
+  position: absolute;
+  background: url("../assets/layer/Herolayer1.png") no-repeat top center / cover;
+  width: auto;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-section .gradient_on_img {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.182) 0%,
+    rgba(0, 0, 0, 0.242) 30%,
+    rgba(0, 0, 0, 0.94) 60%,
+    rgba(0, 0, 0, 0.932) 60%,
+    rgb(0, 0, 0) 100%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120%;
+  height: 105%;
+  z-index: 2;
+}
+
+.hero-section .cta-button:hover {
+  background: linear-gradient(267.79deg, #c66300 0%, #cc3700 99.18%);
+}
+
+.mobile-logo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-logo {
+  width: 60%;
+}
+
+@media (min-width: 2300px) {
+  .hero-text h1 {
+    font-size: 90px;
+  }
+
+  .hero-section p {
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+  }
+
+  .cont {
+    margin-top: 4%;
+  }
+
+  .hero-section .cta-button {
+    width: 220px;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1682px) {
+  .hero_img {
+  }
+
+  .hero-section .gradient_on_img {
+  }
+
+  .hero-text h1 {
+    font-size: 60px;
+  }
+
+  .hero-section p {
+    font-size: 17px;
+    letter-spacing: 0.42px;
+  }
+
+  .cont {
+    margin-top: 4%;
+  }
+
+  .hero-section .hero-text {
+    position: static;
+  }
+
+  .hero-section .cta-button {
+    min-width: 240px;
+    min-height: 70px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1445px) {
+  .hero-section .hero-text {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1445px) {
+  .hero-text h1 {
+    font-size: 51px;
+  }
+
+  .hero-section p {
+    font-size: 16.5px;
+    letter-spacing: 0.38px;
+  }
+
+  .hero-section .cta-button {
+    min-width: 200px;
+    min-height: 60px;
+    font-size: 17px;
+  }
+
+  .hero-section .gradient {
+    width: 40%;
+    height: 100vw;
+  }
+}
+
+@media (max-width: 1030px) {
+  .hero-section .gradient {
+    width: 65%;
+    height: 100vw;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-section p {
+    font-size: 15px;
+    letter-spacing: 0.35px;
+    line-height: normal;
+  }
+
+  .hero-section .cta-button {
+    min-width: 180px;
+    min-height: 50px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 801px) {
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+  }
+
+  .gradient_on_img {
+    display: none;
+  }
+
+  .cont_mobile {
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-bottom: -13%;
+  }
+
+  .hero_img_mobile {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    z-index: -1;
+  }
+
+  .cont,
+  .hero_img {
+    display: none;
+  }
+
+  .cont_mobile .gradient_on_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120%;
+    height: 100%;
+  }
+
+  .hero-section .hero-text {
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+  }
+
+  .cta-button {
+    width: 55%;
+
+    margin: auto;
+  }
+
+  .hero-text h1 .first,
+  .second {
+    font-size: 28px;
+  }
+
+  .hero-section .hero-text p {
+    font-size: 17px;
+    letter-spacing: 0.3px;
+    line-height: normal;
+    margin: auto;
+    margin-top: 7px;
+  }
+
+  .hero-section .cta-button {
+    min-width: 180px;
+    min-height: 50px;
+    font-size: 15px;
+  }
+
+  .gradient {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-section {
+    padding-top: 95px;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-section .hero-text p {
+    font-size: 13px;
+  }
+
+  .hero-section .cta-button {
+    font-size: 20px;
+    width: 250px;
+    height: 66px;
+  }
+}
+
+@media (max-width: 336px) {
+  .hero-section .hero-text h1 {
+    font-size: 22px;
+  }
+
+  .hero-section .hero-text p {
+    font-size: 12px;
+  }
+
+  .hero-section .cta-button {
+    font-size: 16px;
+    width: 220px;
+    height: 54px;
+  }
+}

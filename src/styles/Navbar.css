@@ -1,0 +1,285 @@
+.navbar {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  column-gap: 20px;
+  color: white;
+  margin: 0 7%;
+  height: 100px;
+  flex-wrap: initial;
+  z-index: 4;
+  align-content: center;
+}
+
+.jse{
+display:block;
+justify-content:space-between;
+}
+
+.navbar .lang {
+  color: #fff;
+}
+
+.navbar-logo {
+  height: 52.05px;
+  max-width: 256.47px;
+}
+
+.upside .navbar-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 700px;
+  text-align: right;
+}
+
+.upside .navbar-menu a {
+  margin-right: 10%;
+}
+
+.navbar .navbar-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 505px;
+  height: 100%;
+  flex-shrink: 0;
+  align-content: center;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Neue Machina";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.logo-cursor {
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  color: #ff6b00;
+  cursor: pointer;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-contact {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 40px;
+  border: 1px solid #ff6b00;
+  min-width: 124px;
+  width: 172px;
+  height: 46px;
+  background: linear-gradient(90deg, #a14604 0%, #ff6c01 53.65%, #a14604 100%),
+    linear-gradient(90deg, #52188b 3%, #9f3dff 44.83%, #52188b 97.66%);
+  justify-content: center;
+  line-height: 46px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-family: Neue Machina;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.lang-button {
+  color: #fff;
+  border-radius: 40px;
+  border: 1px solid #ff6b00;
+  background: linear-gradient(90deg, #a14604 0%, #ff6c01 53.65%, #a14604 100%),
+    linear-gradient(90deg, #52188b 3%, #9f3dff 44.83%, #52188b 97.66%);
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-family: Neue Machina;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  //position: relative;
+  //top: -35px;
+  //left: 95%;
+  width: 50px;
+  margin-left: 18px;
+  z-index: 100;
+}
+
+.navbar-contact:hover {
+  background: linear-gradient(267.79deg, #c66300 0%, #cc3700 99.18%);
+}
+
+.lang-button:hover {
+  background: linear-gradient(267.79deg, #c66300 0%, #cc3700 99.18%);
+}
+
+.mobile-header {
+  width: 100%;
+  display: flex;
+  flex-decoration: row;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-item: center;
+  cursor: pointer;
+}
+
+header .burger {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  z-index: 10000;
+}
+header .burger span {
+  display: block;
+  background-color: #ffffff;
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+  margin: 6px;
+  transition: transform 0.3s ease;
+}
+
+header .burger span:nth-of-type(2) {
+  width: 25px;
+}
+
+header .burger.active span:nth-of-type(1) {
+  transform: rotate(50deg);
+}
+header .burger.active span:nth-of-type(2) {
+  display: none;
+}
+header .burger.active span:nth-of-type(3) {
+  transform: rotate(-50deg);
+  margin-top: -10px;
+}
+
+.sub-menu.active {
+  left: 0;
+  z-index: 10000;
+}
+
+.sub-menu {
+  position: fixed;
+  left: -1000px;
+  width: 376px;
+  top: 66px;
+  padding: 20px;
+  background: black;
+  flex-direction: column;
+  height: auto;
+  gap: 20px;
+  margin-right: auto;
+  transition: left 0.3s ease;
+  border-top: 0.5px solid #a14604;
+}
+
+.mobile-menu-logo {
+  width: 52%;
+  margin-bottom: 10px;
+}
+
+.mobile-menu-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-translate-button {
+  font-size: 16px;
+  z-index: 5;
+}
+
+.mobile-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-menu-item {
+  width: 50%; /* Каждый блок будет занимать 50% ширины контейнера */
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Neue Machina";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.mobile-menu-item:hover {
+  color: #ff6b00;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.menu-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
+.menu-copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #adabb2;
+}
+
+@media (max-width: 800px) {
+  .mobile-header {
+    background-color: black;
+    position: fixed;
+    z-index: 11000;
+    border-bottom-width: 0.5px;
+    border-bottom-color: #a14604;
+    border-bottom-style: solid;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobile-translate-button {
+    font-size: 14px !important;
+    overflow: hidden;
+    white-space: normal;
+  }
+
+  .sub-menu {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mobile-header {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 376px) {
+  .sub-menu {
+    width: 100%;
+  }
+}

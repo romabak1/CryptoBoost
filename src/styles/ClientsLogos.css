@@ -1,0 +1,75 @@
+.clients-logos .clients_text {
+  color: #fff;
+  font-family: "Neue Machina";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+.clients-logos {
+  margin-bottom: 100px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 800;
+}
+
+.slider-title-container {
+  width: "100%";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients-logos .slide {
+  /* width: fit-content;
+  padding: 0 15px;
+  margin: auto; */
+  width: 400px;
+  height: 100px !important;
+  display: flex !important;
+  margin: 0, 20;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+@media (max-width: 800px) {
+  .slick-slide img {
+    width: 70%;
+  }
+
+  .clients_text {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .clients-logos .clients_text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .clients-logos .clients_text {
+    font-size: 18px;
+  }
+
+  .clients-logos .slide {
+    height: 75px !important;
+  }
+}

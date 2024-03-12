@@ -1,0 +1,111 @@
+.question-container {
+  word-spacing: 4px;
+  margin-top: 200px;
+  margin-bottom: 195px;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+.question-container-align {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 50px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.faqimg {
+  margin-left: 120px;
+  width: 80%;
+}
+
+.question-container .FAQ {
+  font-family: "Neue Machina";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(90deg,
+      #a14604 0%,
+      #ff6c01 56.3%,
+      #a14604 104.95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+@media (min-width: 2000px) {
+  .question-container {
+    margin-left: 12%;
+  }
+}
+
+@media (min-width: 2500px) {
+  .faqimg {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .faqimg {
+    display: none;
+  }
+
+  .question-container-align {
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .dropdown.open .dropdown-body {
+    flex-wrap: wrap;
+    width: 93%;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown.open .dropdown-body {
+    width: 400px;
+  }
+}
+
+@media (max-width: 460px) {
+  .dropdown.open .dropdown-body {
+    width: 300px;
+  }
+}
+
+@media (max-width: 440px) {
+  .question-container-align {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dropdown-question {
+    width: 28%;
+  }
+}
+
+@media (max-width: 330px) {
+  .dropdown-question {
+    font-size: 12px;
+    margin-left: 10px;
+    width: 20%;
+    min-width: 155px;
+  }
+
+  .dropdown-body {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .dropdown.open .dropdown-body {
+    width: 170px;
+  }
+}

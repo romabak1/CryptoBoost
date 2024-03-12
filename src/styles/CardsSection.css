@@ -1,0 +1,336 @@
+.cardSection {
+  width: fit-content;
+  margin: auto;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 175px;
+  gap: 35px;
+  display: flex;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
+  scroll-behavior: smooth;
+  align-items: end;
+  justify-content: start;
+  overflow-x: scroll;
+
+}
+
+.firstCard {
+  margin-right: 1000px;
+}
+
+.cardSection1 {
+  margin: auto;
+  display: grid;
+  justify-content: space-around;
+  gap: 35px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: end;
+  justify-content: start;
+
+}
+
+.centeredCards {
+  justify-content: center;
+}
+
+.services {
+  display: block;
+  text-align: center;
+}
+
+.services-buttons {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.services h2 {
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #ff6c01;
+  margin-bottom: 10px;
+}
+
+.services .servtext {
+  margin: auto;
+  max-width: 1257px;
+  color: #87868c;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.4px;
+}
+
+.services .servtext .orange {
+  color: #ff6c01;
+  font-family: "Neue Machina";
+  margin-left: 5px;
+  line-height: 104%;
+}
+
+@media (min-width: 2300px) {
+  .services h2 {
+    font-size: 80px;
+  }
+
+  .services .servtext span,
+  .orange {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1660px) {
+  .card5 {
+    display: none;
+  }
+  
+}
+@media (max-width: 1681px) {
+  .services h2 {
+    font-size: 55px;
+  }
+
+  .gorilla {
+    justify-content: start;
+
+  }
+
+  .services .servtext span,
+  .orange {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1445px) {
+  .services h2 {
+    font-size: 50px;
+  }
+
+  .services .servtext span,
+  .orange {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .services h2 {
+    font-size: 38px;
+  }
+
+  .services {
+    margin-top: 40px;
+  }
+
+  .services .servtext span,
+  .orange {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 801px) {
+  .card5 {
+    display: none;
+  }
+  .card8 {
+    display: none;
+  }
+  .services h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .services .servtext span,
+  .orange {
+    font-size: 18px;
+  }
+
+  .services-buttons {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  
+
+  .services-buttons .row .serv-button button .label {
+    margin: 0 auto;
+    font-size: 17px;
+  }
+
+  .services-buttons .row .serv-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cardSection {
+    gap: 20px;
+  }
+
+  .row .button {
+    justify-content: center !important;
+  }
+
+  .label-box {
+    width: 100%;
+    display: flex;
+    direction: column;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .button-badge {
+    width: 120px;
+    position: relative;
+    top: -40px;
+    right: -2%;
+    font-size: 12px !important;
+  }
+
+  .service-button-label {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1215px) {
+  .services-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: start;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .services-buttons::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .services-buttons::-webkit-scrollbar-track {
+    width: 0;
+  }
+
+  .services-buttons::-webkit-scrollbar-thumb {
+    width: 0;
+  }
+
+  .services-buttons {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .services-buttons .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 16px;
+    height: 130px;
+    align-items: flex-end;
+  }
+  .cardSection {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: start;
+    padding-left: 16px;
+    padding-right: 16px;
+    scroll: none;
+  }
+
+  .cardSection::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .cardSection::-webkit-scrollbar-track {
+    width: 0;
+  }
+
+  .cardSection::-webkit-scrollbar-thumb {
+    width: 0;
+  }
+
+  .cardSection {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 800px) {
+  .row .button {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .row .button {
+    font-size: 14px !important;
+    height: 60px !important;
+    padding: 30px 25px;
+  }
+
+  .button-badge {
+    font-size: 12px !important;
+    padding: 6px !important;
+    top: -31px !important;
+  }
+
+  .services-buttons {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .services h2 {
+    font-size: 31px;
+  }
+
+  .services .servtext {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .services-buttons .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 32px;
+    height: 130px;
+    align-items: flex-end;
+  }
+}

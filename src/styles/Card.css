@@ -1,0 +1,322 @@
+div .card {
+  border-radius: 40px;
+  border: 2px solid #000000;
+  background: #fff;
+  width: 300px;
+  height: fit-content;
+  height: 685px;
+  flex-shrink: 0;
+  align-items: center;
+  text-align: inherit;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 20px;
+
+}
+
+.CardSlider {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin: 0 2%;
+
+}
+
+.cardOk {
+  display: inline;
+  min-width: 9%;
+  max-width: 9%;
+
+}
+
+div .card:hover {
+  border: 4px solid #ff6c01;
+}
+
+.h-1 {
+
+  color: #ff6c01;
+  font-family: "Neue Machina";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  align-self: start;
+}
+
+h2.h-2 {
+  color: #000;
+  font-family: "Neue Machina";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  align-self: start;
+  white-space: normal;
+
+}
+
+.card-text {
+  color: #87868c;
+  font-family: "Neue Machina";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.34px;
+  align-self: start;
+  height: auto;
+  margin: 0;
+}
+
+.crossedPrice {
+  color: #000;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 26.825px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.341px;
+  text-decoration: line-through;
+  min-height: 24px;
+  margin-bottom: 0;
+
+}
+
+.price {
+  color: #000;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+.aMonth {
+  color: #000;
+  font-family: "Neue Machina";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.34px;
+  text-align: center;
+}
+
+.card button {
+  border-radius: 40px;
+  border: 1px solid #000;
+  width: 270px;
+  height: 57px;
+  flex-shrink: 0;
+  margin-top: 12px;
+}
+
+.card button:hover {
+  border: 1px solid #ff6b00;
+  background: -webkit-linear-gradient(left, #a14604, #ff6c01, #a14604, #fc4a1a);
+  color: black;
+}
+
+.look {
+  border-radius: 40px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.purchase {
+  border-radius: 40px;
+  border: 1px solid #fff;
+  background: #000;
+
+  color: #fff;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.card-faq-item {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.card .faq {
+  margin-top: 14px;
+}
+
+.faq-p {
+  justify-content: space-between;
+  text-align: start;
+  font-size: 12px;
+  color: #87868c;
+  margin-left: 8px;
+  line-height: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1400px) {
+  div .card {
+    width: 300px;
+    height: 635px;
+    padding: 20px;
+  }
+
+  .card button {
+    width: 270px;
+    height: 57px;
+  }
+
+  .h-1 {
+    font-size: 20px;
+  }
+
+  .h-2 {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .aMonth {
+    font-size: 12px;
+  }
+
+  .crossedPrice {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+  }
+
+  .price {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 1215px) {
+  .faq-p {
+    width: auto;
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+    
+  }
+
+  .card-text {
+    width: auto;
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 1024px) {
+  div .card:hover {
+    div .card:hover {
+      border: 2px solid #ff6c01;
+    }
+  }
+
+  div .card {
+    padding-top: 10px;
+    height: 640px;
+    width: 280px;
+  }
+
+  .card button {
+    width: 245px;
+    height: 60px;
+  }
+
+  .card-text {
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  div .card {
+    padding-top: 10px;
+    width: 260px;
+  }
+
+  .card button {
+    width: 236px;
+    height: 60px;
+  }
+
+  .card-text {
+    line-height: 16px;
+  }
+
+  .price {
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 400px) {
+  div .card {
+    width: 220px;
+    height: 580px;
+  }
+
+  .card button {
+    width: 190px;
+    height: 50px;
+    font-size: 13px;
+  }
+
+  .faq-p {
+    font-size: 11px;
+    line-height: 11px;
+    margin: 0;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 7px;
+  }
+
+  .price {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .card-text {
+    line-height: 10px;
+    font-size: 9px;
+  }
+
+  .h-1 {
+    font-size: 13px;
+  }
+
+  .h-2 {
+    font-size: 11px;
+    width: auto;
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+}

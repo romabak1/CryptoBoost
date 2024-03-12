@@ -1,0 +1,207 @@
+html {
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0) transparent;
+}
+
+.App {
+  text-align: center;
+  justify-content: center;
+}
+
+.App-header {
+  background-color: #808ba3;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.cookie-banner {
+  margin: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff6c01;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #b6b6b6;
+  color: #ffffff;
+  /*  text color */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Optional: adds shadow for depth */
+  z-index: 1000;
+  /* Ensure the banner is above other elements */
+  font-family: "Arial", sans-serif;
+  /* The font family can be changed as per design */
+}
+
+.cookie-banner .p {
+  h3 {
+    font-size: 24px;
+  }
+
+  text-align: left;
+  margin-top: 0px;
+}
+
+.cookie-banner button {
+  margin-left: 10px;
+  padding: 5px 15px;
+  border: none;
+  background-color: #ff6c01;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .cookie-banner-buttons .btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .cookie-banner-text h3,
+  .cookie-banner-text p {
+    font-size: 0.875rem;
+  }
+}
+
+.about-section {
+  width: 697px;
+  height: 150px;
+  top: 1143px;
+  left: 248px;
+  color: white;
+}
+
+.about-section h2 {
+  background: linear-gradient(90deg, #a24604 0%, #ff6c01 53.65%, #a14604 100%);
+}
+
+.App {
+  text-align: center;
+}
+
+.placeholder-image {
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.clients-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  background-color: #333;
+}
+
+.services-section {
+  background-color: #2b2828;
+  color: #fff;
+}
+
+.services-cards-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.service-card {
+  background-color: #fff;
+  /* білий фон для карток */
+  color: #000;
+  /* чорний текст */
+  border-radius: 8px;
+  /* закруглені кути */
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  /* або інша фіксована ширина в залежності від вашого дизайну */
+}
+
+.service-card .pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.service-card .original-price {
+  text-decoration: line-through;
+  /* перекреслений текст для оригінальної ціни */
+}
+
+.service-card .price {
+  font-size: 1.5em;
+  color: #eab308;
+  /* золотистий колір для ціни */
+}
+
+/* Врахуйте, що вам потрібно буде додати медіа-запити для респонсив дизайну */
+.clients-slider {
+  display: flex;
+  overflow-x: auto-scroll;
+  gap: 20px;
+  /* Відступи між елементами */
+}
+
+.client-card {
+  min-width: 160px;
+  /* Мінімальна ширина карточки клієнта */
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Тінь для карточки */
+}
+
+/* Для плейсхолдеру зображення */
+.placeholder-image {
+  height: 80px;
+  /* Висота зображення*/
+  background-color: #333;
+  /* Сірий фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8em;
+}

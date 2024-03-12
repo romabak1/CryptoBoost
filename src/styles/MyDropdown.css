@@ -1,0 +1,136 @@
+.dropdown {
+  background: transparent;
+  max-width: 697px;
+  display: flex;
+}
+
+.answer2 {
+  margin-top: -0;
+}
+
+.dropdown-question {
+  color: #fff;
+  font-family: "Neue Machina";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 26px;
+  width: 671px;
+  text-align: left;
+  text-wrap: wrap;
+  display: inline-flex;
+  margin-right: 8%;
+  word-wrap: break-word;
+  text-wrap: wrap;
+  white-space: normal;
+}
+
+.dropdown-header {
+  cursor: pointer;
+}
+
+.dropdown-number {
+  color: #ff6c01;
+  font-family: "Neue Machina";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.dropdown-icon {}
+
+.line {
+  color: #555;
+  width: 804px;
+  height: 1px;
+}
+
+.dropdown-body {
+  color: #87868c;
+  font-family: "Neue Machina";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  padding: 0 20px;
+  margin-left: 70px;
+}
+
+.dropdown.open .dropdown-body {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+}
+
+@media (max-width: 1259px) {
+  .dropdown {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .line {
+    width: 715px;
+  }
+
+  .dropdown-question {
+    font-size: 21px;
+    margin-left: 20px;
+    width: 640px;
+    margin-right: 20px;
+
+  }
+
+  .dropdown-number {
+    font-size: 22px;
+  }
+
+  .dropdown-body {
+    font-size: 19px;
+    line-height: 28px;
+    max-height: 0;
+    padding: 0 17px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dropdown {
+    max-width: 400px;
+  }
+
+  .dropdown-question {
+    width: 75%;
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 700px) {
+  .dropdown-question {
+    width: 65%;
+  }
+}
+
+@media (max-width: 630px) {
+  .dropdown-header {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .dropdown-question {
+    width: 40%;
+    min-width: 200px;
+    display: inline-block;
+    overflow: auto;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 18px;
+  }
+}

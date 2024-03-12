@@ -1,0 +1,43 @@
+.Revievs {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.revh1 {
+  margin-top: 130px;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 74px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #a14604 0%, #ff6c01 53.65%, #a14604 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+.Revievs .slide {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.Revievs .slick-slide {
+}
+
+.r-slide {
+  width: 100% !important;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (max-width: 470px) {
+  .revh1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

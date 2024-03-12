@@ -1,0 +1,257 @@
+.subscription-container {
+  text-align: center;
+  color: #fff;
+  width: 1419px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0a0a0a;
+  padding: 60px 260px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients_text {
+  display: flex;
+  margin: auto;
+  color: #fff;
+  font-family: "Neue Machina";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-bottom: 35px;
+  justify-content: center;
+  text-wrap: nowrap;
+}
+
+.subscription-container h2 {
+  display: flex;
+  justify-content: center;
+
+  background: -webkit-linear-gradient(#a14604, #ff6c01, #a14604);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  color: #ff6c01;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 45px;
+  font-style: bold;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.subscription-container p {
+  width: 535px;
+  margin-bottom: 30px;
+  color: #e3dede;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  width: 600px;
+}
+
+.subscription-container .emailform {
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.subscription-container input[type="email"] {
+  width: 530px;
+  height: 64px;
+  flex-shrink: 0;
+  border: 1px solid #ff6c01;
+  border-radius: 40px;
+  background: #0a0a0a;
+  color: #87868c;
+  font-family: "Neue Machina";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  padding: 30px;
+  margin-right: 21px;
+}
+
+.subscription-container button {
+  width: 300px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 2px solid #ff6b00;
+  background: linear-gradient(90deg, #a14604 0%, #ff6c01 53.65%, #a14604 100%),
+    linear-gradient(90deg, #52188b 3%, #9f3dff 44.83%, #52188b 97.66%);
+  color: #fff;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.captcha-modal button {
+  width: 302px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 2px solid #ff6b00;
+  background: linear-gradient(90deg, #a14604 0%, #ff6c01 53.65%, #a14604 100%),
+    linear-gradient(90deg, #52188b 3%, #9f3dff 44.83%, #52188b 97.66%);
+  color: #fff;
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.captcha-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.captcha-content {
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1440px) {
+  .subscription-container {
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscription-container input[type="email"] {
+    margin-right: 0;
+  }
+
+  .subscription-container p {
+    display: flex;
+    width: 600px;
+    color: #e3dede;
+    font-family: "Neue Machina";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    justify-content: center;
+  }
+
+  .subscription-container .emailform {
+    flex-direction: column;
+  }
+
+  .subscription-container button {
+    width: 529px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .subscription-container {
+    width: 100%;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .subscription-container input[type="email"] {
+    width: 450px;
+  }
+
+  .subscription-container button {
+    width: 420px;
+  }
+
+  .subscription-container {
+    padding: 60px 16px;
+  }
+
+  .subscription-container p {
+    width: 420px;
+  }
+
+  .subscription-container h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 529) {
+  .subscription-container {
+    padding: 60px 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .subscription-container input[type="email"] {
+    width: 300px;
+  }
+
+  .subscription-container button {
+    width: 300px;
+  }
+
+  .subscription-container p {
+    width: 285px;
+  }
+}
+
+@media (max-width: 360px) {
+  .subscription-container h2 {
+    font-size: 30px;
+  }
+
+  .subscription-container input[type="email"] {
+    width: 200px;
+    font-size: 12px;
+    height: 56px;
+  }
+
+  .subscription-container button {
+    width: 200px;
+    font-size: 17px;
+    height: 56px;
+  }
+
+  .subscription-container p {
+    width: 180px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
